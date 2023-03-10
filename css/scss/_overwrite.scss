@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Inter:wght@400;700&display=swap');
+
+/* CUSTOM VARIABLES */
+$blue-color: #3858E9;
+$dark-color: #23282D;
+$white-color: #FFE9DE;
+$blue-hover: #213FDA;
+$darken-color: #1c2024;
+
+
+/********************* OVERWRITE VARIABLES *********************/
+
+/* COLORS */
+$primary : $blue-color;
+$secondary: $dark-color;
+$body-bg: $white-color;
+
+
+
+/* BORDER RADIUS */
+$border-radius: .13rem;
+$border-radius-lg: .13rem;
+
+/* SPACING OVERWRITE */
+$spacer: 1rem;
+$spacers: (
+    0: 0,
+    1: $spacer * .25,
+    2: $spacer * .5,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 3,
+    6: $spacer * 3.5,
+    7: $spacer * 4,
+    8: $spacer * 4.5,
+    9: $spacer * 5,
+    10: $spacer * 5.5,
+);
+
+
+/* LINKS */
+$link-color: $primary;
+$link-decoration: none;
+$link-hover-decoration: underline;
+
+
+/* FONT FAMILY */
+
+$font-family-sans-serif: Inter,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    "Noto Sans",
+    "Liberation Sans",
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
+
+
+/* DISPLAY */
+$display-font-sizes: (
+    1: 5rem,
+    2: 4.5rem,
+    3: 4rem,
+    4: 3.5rem,
+    5: 3rem,
+    6: 2.5rem,
+    7: 2rem,
+    8: 1.5rem,
+);
+
+/* FONT SIZES */
+$font-size-base: 1rem;
+
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+$h7-font-size: 0.875rem;
+// scss-docs-end font-variables
+
+// scss-docs-start font-sizes
+$font-sizes: (
+    1: $h1-font-size,
+    2: $h2-font-size,
+    3: $h3-font-size,
+    4: $h4-font-size,
+    5: $h5-font-size,
+    6: $h6-font-size,
+    7: $h7-font-size
+);
+
+/* DROPDOWN */
+$dropdown-bg: $dark-color;
+$dropdown-link-color: $white-color;
+$dropdown-link-hover-bg: transparent;

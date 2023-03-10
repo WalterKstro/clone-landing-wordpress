@@ -1,0 +1,69 @@
+.burger-menu {
+    width: 24px;
+    height: 16px;
+
+    // THE LINES
+    span,
+    span:before,
+    span:after {
+        background: #fff;
+        display: block;
+        height: 2px;
+        opacity: 1;
+        transition: 0.3s ease-in-out;
+    }
+
+    span:before,
+    span:after {
+        content: '';
+        position: absolute;
+    }
+
+    // TOP
+    span:before {
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+
+    // MIDDLE
+    span {
+        right: 0px;
+        top: 12px;
+        width: 24px;
+    }
+
+    // BOTTOM
+    span:after {
+        left: 0px;
+        bottom: 0;
+        width: 24px;
+    }
+
+    // ROTATION ON CLICK
+    &.close {
+
+        // TOP
+        span:before {
+            top: 0px;
+            transform: rotate(90deg);
+            width: 24px;
+        }
+
+        // MIDDLE
+        span {
+            transform: rotate(-45deg);
+            top: 13px;
+            width: 24px;
+        }
+
+        // BOTTOM
+        span:after {
+            top: 0px;
+            left: 0;
+            transform: rotate(90deg);
+            opacity: 0;
+            width: 0;
+        }
+    }
+}
