@@ -34,3 +34,16 @@
 .bg-color {
     @include bg-color();
 }
+
+
+
+/********************* SECTION EDITOR *********************/
+.bg-editor {
+    background-image: url(../image/editor.webp);
+    background-size: cover;
+}
+
+/********************* SECTION DREAM *********************/
+.rotate-icon {
+    transform: rotate(45deg);
+}
