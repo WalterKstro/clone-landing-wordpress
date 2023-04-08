@@ -1,13 +1,26 @@
 (function () {
+    const { createApp } = Vue
 
-    const burgerMenu = document.getElementById('burger-menu');
+    createApp({
+        data() {
+            return {
+                services: [
+                    'Web Design',
+                    'Web Development',
+                    'App Design',
+                    'SEO Services',
+                    'Game Development',
+                    'Data Analysis',
+                    'Software Dev',
+                    'UI/UX Design',
+                    'Blockchain',
+                    'Social Media Marketing',
+                    'App Development',
+                    'Motion Graphics',
+                ]
+            }
+        }
+    }).mount('#services')
 
-    const overlay = document.getElementById('menu');
-
-    burgerMenu.addEventListener('click', function () {
-        this.classList.toggle("close");
-        overlay.classList.toggle("overlay");
-    });
-
-
+    gsap.to('.animation-banner', { y: 15, duration: 1, repeat: -1, yoyo: true })
 })()

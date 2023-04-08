@@ -1,0 +1,72 @@
+.bg-banner {
+    background-image: url('../../image/banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-primary-hover:hover {
+    background-color: $primary;
+}
+
+.bg-button {
+    background-color: $purple-lighten-color;
+}
+
+/* LINE PSEUDOELEMENTS */
+.pseudoelemento-line-h::before {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 2px;
+    display: block;
+    margin-right: 1rem;
+
+}
+
+.pseudoelemento-line-h___purple::before {
+    background-color: $primary;
+}
+
+.pseudoelemento-line-h___white::before {
+    background-color: $white-color;
+}
+
+.pseudoelemento-line-v::before {
+    content: '';
+    width: .2rem;
+    display: block;
+    height: 25px;
+    margin-right: 1rem;
+}
+
+.pseudoelemento-line-v__purple::before {
+    background-color: $primary;
+}
+
+.wath-we-do .grid>*:hover {
+    background-color: $primary !important; // sorry for this
+    color: $white-color;
+}
+
+.pseudoelemento-icon__arrow::after {
+    content: "\F138";
+    font-family: "bootstrap-icons";
+    display: block;
+    opacity: 0;
+    transition: transform .3s ease, opacity .3s ease;
+}
+
+.pseudoelemento-icon__arrow:hover::after {
+    opacity: 1;
+    transform: translateX(10px);
+}
+
+/*ABOUT ME*/
+.about-me {
+    background-image: url('../../image/about-me.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

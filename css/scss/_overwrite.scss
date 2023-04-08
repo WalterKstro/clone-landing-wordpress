@@ -1,18 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Inter:wght@400;700&display=swap');
 
 /* CUSTOM VARIABLES */
-$blue-color: #3858E9;
-$dark-color: #23282D;
-$white-color: #FFE9DE;
+$purple-color: #4d1ea4;
+$blue-color: #5f8ff8;
+$white-color: #f8f4fc;
 $blue-hover: #213FDA;
-$darken-color: #1c2024;
+$darken-color: #2f0264;
+$purple-lighten-color: #6f1adb;
 
 
 /********************* OVERWRITE VARIABLES *********************/
 
 /* COLORS */
-$primary : $blue-color;
-$secondary: $dark-color;
+$primary : $purple-color;
+$secondary: $blue-color;
 $body-bg: $white-color;
 $black: $darken-color;
 
@@ -74,7 +75,6 @@ $display-font-sizes: (
     8: 1.5rem,
 );
 
-$display-font-family: 'EB Garamond';
 
 
 /* FONT SIZES */
@@ -101,7 +101,6 @@ $font-sizes: (
 );
 
 /* DROPDOWN */
-$dropdown-bg: $dark-color;
 $dropdown-link-color: $white-color;
 $dropdown-link-hover-bg: transparent;
 
